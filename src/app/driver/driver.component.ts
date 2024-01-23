@@ -43,4 +43,13 @@ export class DriverComponent implements OnInit {
     console.log("Me klikna");
     this.cuci.emit(this.vozac);
   }
+
+  funkcija() {
+    if(this.clicked){
+      return {'background-color':'green'};
+    }
+    else{
+      return {'background-color':'blue'};
+    }
+  }
 }
